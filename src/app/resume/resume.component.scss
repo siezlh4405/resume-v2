@@ -1,0 +1,12 @@
+@import 'variable';
+
+.section {
+  margin: 0 10rem;
+  border-bottom: .3rem solid $color-gray4;
+  padding-bottom: 3rem;
+  border-radius: 2px;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

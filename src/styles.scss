@@ -1,21 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$laptop: 75em; // 1200px
-$tablet: 62.25em; // 996px
-$phone: 37.5em; // 600px
-
-$color-gray1: #333;
-$color-gray2: #ccc;
-$color-gray3: #555;
-$color-gray4: #ebebeb;
-$color-shadow: #ddd;
-$color-blue-light: #6fa3e3;
-$color-blue-dark: #194985;
-$color-blue-light-second: #90a4bd;
-$color-green-light: #1ad423;
-$color-green-dark: #108515;
-$color-orange-light: #f1b174;
-$color-orange-dark: #c9701c;
-$color-red-light: #e75f5f;
+@import './assets/scss/variable';
 
 *,
 *::before,
