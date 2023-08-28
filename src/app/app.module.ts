@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProfileComponent } from './resume/components/profile/profile.component';
 import { AboutMeComponent } from './resume/components/about-me/about-me.component';
+import { SkillComponent } from './resume/components/skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
     ProfileComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,51 @@
+@import 'variable';
+@import 'icon';
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem 6rem 10rem;
+
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $color-gray1;
+  }
+
+  &__level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__level-item {
+    width: calc(100% / 6);
+    height: 1.4rem;
+    border: 1px solid $color-gray3;
+
+    &_fill {
+      background-color: $color-gray3;
+    }
+  }
+}
