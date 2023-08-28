@@ -9,4 +9,22 @@
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  &__title-box {
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+  }
+
+  &__title {
+    height: 5.5rem;
+    font-size: 4.4rem;
+    color: $color-blue-light;
+  }
+
+  &__sub-title {
+    margin-left: 2rem;
+    font-size: 2.4rem;
+    font-style: italic;
+    color: $color-blue-dark;
+  }
 }

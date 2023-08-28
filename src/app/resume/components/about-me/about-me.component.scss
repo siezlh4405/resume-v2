@@ -1,0 +1,17 @@
+@import 'variable';
+@import 'icon';
+
+.about-me {
+  padding: 0 8rem;
+  font-size: 1.8rem;
+
+  &__text {
+    text-indent: 1.8rem;
+  }
+
+  & > * {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+  }
+}
