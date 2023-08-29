@@ -1,17 +1,30 @@
 @import 'variable';
+@import 'mixins';
 @import 'icon';
 
 .experience {
   padding: 0 8rem;
 
+  @include response (tablet) {
+    padding: 0 2rem;
+  }
+
   &__item {
     display: flex;
+
+    @include response (tablet) {
+      flex-direction: column;
+    }
   }
 
   &__time-box {
     flex: 0 0 20rem;
     margin-right: 5rem;
     border-right: 3px solid $color-gray4;
+
+    @include response (tablet) {
+      display: none;
+    }
   }
 
   &__info-box {
@@ -31,9 +44,23 @@
   }
 
   &__company {
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: $color-blue-light-second;
+
+    @include response (tablet) {
+      line-height: 3rem;
+    }
+
+    &_sub {
+      font-size: 1.8rem;
+      display: none;
+      margin-left: 1rem;
+
+      @include response (tablet) {
+        display: inline-block;
+      }
+    }
   }
 
   &__job-title {
@@ -55,7 +82,13 @@
     color: $color-blue-dark;
 
     &:not(:last-child) {
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.8rem;
+
+      @include response (tablet) {
+        margin-bottom: 4rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #ccc;
+      }
     }
   }
 
@@ -66,6 +99,7 @@
   &__work-title {
     font-weight: 700;
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   &__work-text {

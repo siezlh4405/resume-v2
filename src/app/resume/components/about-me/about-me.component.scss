@@ -1,9 +1,14 @@
 @import 'variable';
+@import 'mixins';
 @import 'icon';
 
 .about-me {
   padding: 0 8rem;
   font-size: 1.8rem;
+
+  @include response (tablet) {
+    padding: 0 2rem;
+  }
 
   &__text {
     text-indent: 1.8rem;
