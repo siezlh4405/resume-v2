@@ -1,0 +1,10 @@
+// RWD
+@mixin response ($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $tablet) { @content; } // 768px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $phone) { @content; } // 576px
+  }
+}
