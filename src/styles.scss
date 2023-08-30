@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/scss/variable';
 @import './assets/scss/mixins';
+@import "~swiper/swiper-bundle.css";
 
 *,
 *::before,
@@ -26,4 +27,13 @@ body {
   @include response (tablet) {
     padding: 6rem 2rem;
   }
+}
+
+// swiper
+.swiper-slide {
+  color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
