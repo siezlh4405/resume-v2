@@ -11,9 +11,11 @@
 
   &__item {
     display: flex;
+    margin-bottom: 3.5rem;
 
     @include response (tablet) {
       flex-direction: column;
+      margin-bottom: 5rem;
     }
   }
 
